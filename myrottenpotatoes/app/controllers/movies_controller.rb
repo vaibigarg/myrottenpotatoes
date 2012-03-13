@@ -7,8 +7,18 @@ class MoviesController < ApplicationController
   def show 
     id = params[:id]
     @movie = Movie.find(id)
+#logger.debug("Value of Movie: " +  @movie.inspect) 
+    debugger
+  end
+
+  def new
+  end
+
+  def create 
+    @movie = Movie.create!(params[:movie])
+    redirect_to movies_path
+    flash[:notice] = "#{@movie.title} was successfully created"
   end
   
-  
-  end
+end
 

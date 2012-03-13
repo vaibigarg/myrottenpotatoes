@@ -15,4 +15,6 @@
         %td= movie.release_date
         %td= movie.description
         %td= link_to "More about #{movie.title}", movie_path(movie)
+%br
 
+= link_to 'Add New Movie', new_movie_path
