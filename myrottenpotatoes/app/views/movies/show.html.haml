@@ -10,5 +10,6 @@
 %h3 Description:
 
 %p#description= @movie.description
-
-= link_to 'Back to Movies', movies_path
+= link_to 'Edit Info', edit_movie_path(@movie)
+= link_to 'Back to Movies list', movies_path
+= button_to 'Delete', movie_path(@movie), :method=> :delete, :confirm => 'Are you sure?'

@@ -32,7 +32,7 @@ h1 {
   width: 100%;
   border-bottom: 1px solid DarkSlateGrey;
 }
-h1.title {
+h1.title, h1 a {
   margin: 0 0 1em;
   padding: 10px;
   background-color: orange;
@@ -40,6 +40,7 @@ h1.title {
   border-bottom: 4px solid gold;
   font-size: 2em;
   font-style: normal;
+  text-decoration: none;
 }
 table#movies {
   margin: 10px;
@@ -72,5 +73,8 @@ p.flash {
   font-weight: bold;
   text-align: center;
 }
+table tr:hover{
+  background-color:yellow;
 
+}
 

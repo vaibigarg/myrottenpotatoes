@@ -7,6 +7,8 @@
     = csrf_meta_tags
 
   %body
+    %h1.title 
+      = link_to 'Rotten Potatoes', movies_path 
     - if flash[:notice]
       %p.flash= flash[:notice]
     - elsif flash[:warning]
